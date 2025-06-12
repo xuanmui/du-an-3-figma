@@ -15,6 +15,13 @@ body {
   font-size: 1.6rem;
 }
 /* ================= common =================*/
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
 .control {
   display: flex;
   align-items: center;
@@ -61,7 +68,7 @@ a {
 
 .btn {
   display: inline-block;
-  width: 205px;
+  min-width: 205px;
   line-height: 60px;
   border-radius: 999px;
   background: #2e80ce;
@@ -599,7 +606,7 @@ a {
 }
 /* ================= CTA =================*/
 .cta {
-  margin: 85px 0;
+  margin-top: 85px;
 }
 
 .cta__inner {
@@ -624,4 +631,133 @@ a {
 
 .cta__appointment {
   margin-top: 38px;
+}
+/* ================= footer =================*/
+.footer {
+  background-color: #10375c;
+  margin-top: 170px;
+  padding: 100px 0 42px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+  border-bottom: 1px solid #406181;
+  padding-bottom: 28px;
+}
+
+.footer__desc {
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  margin-top: 21px;
+}
+
+.footer__heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.footer__ul {
+  margin: 20px 0 28px;
+}
+
+.footer__list {
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  white-space: nowrap;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__socials {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin: 20px 0 28px;
+}
+
+.footer__socials-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #2e80ce;
+  transition: 0.3s;
+}
+
+.footer__socials-btn:hover {
+  background-color: #2e80ce;
+  color: #fff;
+}
+
+.footer__text--subcrise {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  margin-top: 20px;
+}
+
+.footer__form {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.footer__form--email {
+  width: 212px;
+  height: 46px;
+  flex-shrink: 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+}
+
+.footer__form--email::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.footer__form--subcrise {
+  min-width: 108px;
+  line-height: 46px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  border: none;
+  padding: 10px 21px;
+  cursor: pointer;
+}
+
+.footer__copyright-text {
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  margin-top: 28px;
 }
