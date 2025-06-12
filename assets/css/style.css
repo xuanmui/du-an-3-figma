@@ -597,3 +597,31 @@ a {
 .blog-item:hover .blog-info__link {
   color: #2e80ce;
 }
+/* ================= CTA =================*/
+.cta {
+  margin: 85px 0;
+}
+
+.cta__inner {
+  background-color: #f6fbff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cta__underline {
+  width: 136px;
+  height: 2px;
+  background-color: #2e80ce;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+
+.cta__desc {
+  width: 617px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta__appointment {
+  margin-top: 38px;
+}
