@@ -489,6 +489,7 @@ a {
 /* ================= blog =================*/
 .blog {
   padding: 85px 0;
+  background-color: #fff;
 }
 
 .blog__inner {
