@@ -112,17 +112,77 @@
     width: 90%;
     text-align: start;
   }
+  /* worklist */
+  .works-list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .about-body {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .about__media {
+    width: 100%;
+  }
+  .about-content {
+    width: 90%;
+    text-align: center;
+  }
+  .about__img--front {
+    display: none;
+  }
+  .about__img--back {
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px auto;
+  }
+  /* team */
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .team-item {
+    text-align: center;
+  }
+  .install__img {
+    display: none;
+  }
+  .install__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* blog */
+  .blog__inner {
+    flex-direction: column;
+  }
+  .blog__content {
+    order: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog__heading {
+    max-width: 90%;
+  }
+
+  .blog__card {
+    order: 1;
+  }
+  /* footer */
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-hidden-tablet {
+    display: none;
+  }
+  .footer__inner {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
 }
 
 /* Mobile */
 @media (max-width: 767.98px) {
-}
-
-/* tạm ẩn */
-.footer {
-  display: none;
 }
