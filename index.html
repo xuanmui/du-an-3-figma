@@ -54,7 +54,7 @@
         <a href="#!"><img src="./assets/image/logo.svg" alt="shine smile" class="header__logo logo" /></a>
         <!-- navbar -->
         <nav class="navbar">
-          <ul class="navbar__list">
+          <ul class="navbar__list" id="navbar__list--pc">
             <li class="navbar__item">
               <a href="#!" class="navbar__link navbar__link--active">Home</a>
             </li>
@@ -112,7 +112,30 @@
     </label>
     <!-- thêm lớp phủ overlay -->
     <label for="menu-checkbox" class="menu-overlay"></label>
-
+    <!-- menu-content -->
+    <div class="menu-drawer">
+      <!-- menu top -->
+      <div class="menu-drawer__top">
+        <!-- logo -->
+        <a href="#!"><img src="./assets/image/logo.svg" alt="shine smile" class="logo" /></a>
+        <!-- icon close-->
+        <label for="menu-checkbox">
+          <svg class="close__menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+          </svg>
+        </label>
+      </div>
+      <!-- nav cho mobile  -->
+      <ul id="navbar__list--mobile"></ul>
+      <!-- sử dụng javascript để copy navbar -->
+      <script>
+        const navPC = document.querySelector("#navbar__list--pc");
+        const navMobile = document.querySelector("#navbar__list--mobile");
+        // sao chép
+        navMobile.innerHTML = navPC.innerHTML;
+      </script>
+    </div>
   </div>
   <!-- main -->
   <main>
