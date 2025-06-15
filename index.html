@@ -31,8 +31,15 @@
   <!-- reset css -->
   <link rel="stylesheet" href="./assets/css/reset.css" />
 
+
+  <!-- AOS style -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- animate style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- style -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- reponsive -->
+  <link rel="stylesheet" href="./assets/css/reponsive.css">
 
   <title>Shine Smile</title>
 </head>
@@ -44,7 +51,7 @@
       <!-- header-top -->
       <div class="header-top">
         <!-- logo -->
-        <a href="#!"><img src="./assets/image/logo.svg" alt="shine smile" class="logo" /></a>
+        <a href="#!"><img src="./assets/image/logo.svg" alt="shine smile" class="header__logo logo" /></a>
         <!-- navbar -->
         <nav class="navbar">
           <ul class="navbar__list">
@@ -94,6 +101,19 @@
       </section>
     </div>
   </header>
+  <!-- tablet mobile header -->
+  <div class="mobile-header">
+    <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+    <label for="menu-checkbox">
+      <svg class="menu-header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor"
+          d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+      </svg>
+    </label>
+    <!-- thêm lớp phủ overlay -->
+    <label for="menu-checkbox" class="menu-overlay"></label>
+
+  </div>
   <!-- main -->
   <main>
     <!-- our service -->
@@ -173,15 +193,16 @@
     <!-- works -->
     <section class="works">
       <div class="container">
-        <h2 class="works__heading section-heading">How it works</h2>
-        <p class="works__desc section-desc">Exceptional dental care for all ages. Your great smile begins with a great
+        <h2 class="works__heading section-heading" data-aos="animate__flash">How it works</h2>
+        <p class=" works__desc section-desc">Exceptional dental care for all ages. Your great smile begins with a great
           dentist.</p>
         <div class="works-list">
           <!-- item1 -->
           <section class="works-item">
             <img src="./assets/image/search.svg" alt="Search doctor" class="works-item__icon">
             <h3 class="works-item__heading-lv3">Search doctor</h3>
-            <p class="works-item__desc">Search a doctor by education, qualifications or experience-contact for inquiry.
+            <p class="works-item__desc">Search a doctor by education, qualifications or experience-contact for
+              inquiry.
             </p>
             <a href="#!" class="works-item__link">Learn More</a>
           </section>
@@ -189,7 +210,8 @@
           <section class="works-item">
             <img src="./assets/image/find-user.svg" alt="Find best doctor" class="works-item__con">
             <h3 class="works-item__heading-lv3">Find best doctor</h3>
-            <p class="works-item__desc">Search a doctor by education, qualifications or experience-contact for inquiry.
+            <p class="works-item__desc">Search a doctor by education, qualifications or experience-contact for
+              inquiry.
             </p>
             <a href="#!" class="works-item__link">Learn More</a>
           </section>
@@ -481,6 +503,16 @@
       </div>
     </div>
   </footer>
+
+  <!-- js aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      useClassNames: true,
+      initClassName: false,
+      animatedClassName: 'animate__animated',
+    });
+  </script>
 </body>
 
 </html>
